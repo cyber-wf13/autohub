@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="../css/slick.css">
+  <link rel="stylesheet" href="../css/slick-theme.css">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <link rel="stylesheet" href="../css/style.min.css">
+  <title>Запчасти</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <img class="logo" src="../images/logo.svg" alt="AutoHub">
+        <div class="header__btn-box">
+          <a class="header__tel-btn header__mobile-btn" href="tel:+38 093 699 09 81"></a>
+          <button class="header__menu-btn header__mobile-btn"></button>
+        </div>
+        <nav class="menu menu--mobile">
+          <ul class="menu-list menu-list--mobile">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="../index.html">Главная</a>
+            </li>
+            <li class="menu-list__item menu-list__item--active">
+              <a class="menu-list__link" href="page-spares.html">Запчасти</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="page-about.html">О нас</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="page-contacts.html">Контакты</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="page-blog.html">Блог</a>
+            </li>
+            <li class="menu-list__item menu-list__item-number">
+              <a class="menu-list__link" href="tel:+38 099 699 09 81">+38 093 699 09 81</a>
+            </li>
+            <button class="menu__btn menu__btn--mobile"></button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a class="breadcrumbs__list-link" href="../index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <a class="breadcrumbs__list-link" href="page-spares.html">Запчасти</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <a class="breadcrumbs__list-link" href="#">Расходомер воздуха</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <a class="breadcrumbs__list-link" href="#">Mercedes</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <a class="breadcrumbs__list-link" href="#">S-klass</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <a class="breadcrumbs__list-link" href="#">Расходомер воздуха 3455653234</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="popup mfp-hide" id="popup-delivery">
+    <form class="popup__form" action="#">
+      <div class="popup__wrapper">
+        <button class="popup__close-btn mfp-close"></button>
+        <h2 class="popup__title">Заказ</h2>
+        <div class="popup__content">
+          <p class="popup__text">Оставьте ваше имя и номер телефона
+            и наш менеджер перезвонит вам</p>
+          <span class="popup__product">Амортизатор задний левый Land Rover Range Rover Sport Range Rover Sport (LS) 2005
+            -
+            2013</span>
+          <div class="popup__input-items">
+            <input class="popup__input" type="text" placeholder="Ваше имя" id="name" required>
+            <label class="popup__label" for="name">*</label>
+            <input class="popup__input" type="tel" placeholder="Ваш телефон" id="phone" required>
+            <label class="popup__label" for="phone">*</label>
+            <textarea class="popup__input popup__input-message" name="delivery-message" cols="30" rows="10"
+              placeholder="Коментарий"></textarea>
+            <input class="popup__btn" type="submit" value="Отправить">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+
+    <div class="product-content">
+      <aside class="aside">
+        <button class="aside__menu-btn"></button>
+        <form action="#" class="form-spares">
+          <div class="selection-box">
+            <div class="scroll">
+
+              <h2 class="selection-box__title selection-box__title-head">Подбор запчастей</h2>
+              <div class="form-spares__input-text">
+                <h4 class="form-spares__input-title">Артикул</h4>
+                <input class="form-spares__input-item" type="text" name="vendor-code" id="vendor-code">
+              </div>
+
+              <div class="form-spares__input-text">
+                <h4 class="form-spares__input-title">ОЕМ</h4>
+                <input class="form-spares__input-item" type="text" name="oem-code" id="oem-code">
+              </div>
+
+              <div class="accordion" id="brands">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Марка</h5>
+                  <span class="accordion__count">(1 452)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="brands-input" id="brands-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="brands-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="model">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Модель</h5>
+                  <span class="accordion__count">(1 222)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="model-input" id="model-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="model-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="spares">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Запчасти</h5>
+                  <span class="accordion__count">(1 223 344)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="spares-input" id="spares-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="spares-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="selection-box selection-box__param">
+            <div class="scroll">
+              <h2 class="selection-box__title">Дополнительные параметры</h2>
+
+              <div class="accordion" id="carcase">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Кузов</h5>
+                  <span class="accordion__count">(6)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="carcase-input" id="carcase-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="carcase-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="engine">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Тип ДВС</h5>
+                  <span class="accordion__count">(16)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="engine-input" id="engine-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="engine-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="capacity">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Объем</h5>
+                  <span class="accordion__count">(26)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="capacity-input" id="capacity-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="capacity-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="featuresEngine">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">Особенности ДВС</h5>
+                  <span class="accordion__count">(0)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="featuresEngine-input"
+                    id="featuresEngine-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="featuresEngine-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+
+              <div class="accordion" id="transmission">
+                <div class="accordion__header" data-active="">
+                  <h5 class="accordion__title">КПП</h5>
+                  <span class="accordion__count">(3)</span>
+                </div>
+                <div class="accordion__content">
+                  <input class="accordion__input-item" type="text" name="transmission-input" id="transmission-input">
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">CD-чейнджер, Проигрыватель CD-DVD
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">Абсорбер бампера
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">Автономный отопитель
+                      <span class="accordion__radio-count">(122)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">Аккумуляторная батарея, конвертор, проводка, крепление и д.р
+                      <span class="accordion__radio-count">(525)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">Аксессуары
+                      <span class="accordion__radio-count">(6)</span>
+                    </p>
+                  </label>
+
+                  <label class="accordion__label">
+                    <input class="accordion__radio visually-hidden" type="radio" name="transmission-radio">
+                    <p class="accordion__radio-name">Активный стабилизаттор поперечной устойчивости, блок управления
+                      <span class="accordion__radio-count">(8)</span>
+                    </p>
+                  </label>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="selection-box selection-box__range">
+            <h2 class="selection-box__title">Год</h2>
+
+            <div class="slider slider-year" id="year"></div>
+            <div class="slider__amount">
+              <span class="slider__amount-title">Год:</span>
+              <input class="slider__amount-value slider-year__amount-value" type="text">
+            </div>
+
+          </div>
+
+          <div class="selection-box selection-box__range selection-box__range--last">
+            <h2 class="selection-box__title">Цена</h2>
+
+            <div class="slider slider-price" id="price"></div>
+            <div class="slider__amount">
+              <input class="slider-price__amount-input visually-hidden" type="text">
+              <span class="slider__amount-title">Цена:</span>
+              <span class="slider__amount-value slider-price__amount-value" type="text"></span>
+              <p class="slider__currency">UAH /
+                <span class="slider__currency-exchange"></span>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="form-spares__wrapper-btn--mobile">
+            <input class="form-spares__submit" type="submit" value="Искать">
+            <input class="form-spares__reset" type="reset" value="очистить">
+          </div>
+        </form>
+
+
+        <div class="tags">
+          <h2 class="tags__title">Другие запчасти для Mercedes s-klass</h2>
+          <ul class="tags__list">
+            <li class="tags__item">
+              <a href="#" class="tags__link">Абсорбер (фильтр угольный)</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">Автономный отопитель</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">Активатор замка багажника</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">Актуатор турбины</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">Амортизатор задний</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">Амортизатор передний</a>
+            </li>
+            <li class="tags__item">
+              <a href="#" class="tags__link">еще</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="product-content__wrapper">
+
+        <button class="product-content__aside-btn--mobile">Фильтр</button>
+        <section class="gallery">
+          <div class="gallery__tags-info">
+            <span class="gallery__tags-item">в наличии</span>
+            <span class="gallery__tags-vendor">Артикул: <strong>1234565</strong></span>
+          </div>
+
+          <h4 class="gallery__title">Расходомер воздуха 3455653234 Mercedes S-klasse 2010 - 2019</h4>
+
+          <div class="gallery__content">
+            <div class="gallery__images">
+              <div class="gallery__images-wrapper">
+                <img class="gallery__images-item" src="../images/product-1.png" alt="product">
+                <img class="gallery__images-item" src="../images/product-2.png" alt="product">
+                <img class="gallery__images-item" src="../images/product-3.png" alt="product">
+              </div>
+              <img class="gallery__image" src="../images/product-1.png" alt="product">
+            </div>
+
+            <div class="gallery__info">
+              <table class="gallery__table">
+                <tbody>
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Марка</td>
+                    <td class="gallery__table-cell gallery__table-content">Mersedes</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Модель</td>
+                    <td class="gallery__table-cell gallery__table-content">S-klass</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">OEM</td>
+                    <td class="gallery__table-cell gallery__table-content">344gf355</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Год</td>
+                    <td class="gallery__table-cell gallery__table-content">2011</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Тип ДВС</td>
+                    <td class="gallery__table-cell gallery__table-content">бензин</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Объем</td>
+                    <td class="gallery__table-cell gallery__table-content">5.5</td>
+                  </tr>
+
+                  <tr class="gallery__table-row">
+                    <td class="gallery__table-cell gallery__table-title">Коментарий</td>
+                    <td class="gallery__table-cell gallery__table-content">Сайт использует файлы cookie, чтобы
+                      гарантировать максимальное </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="gallery__price">
+                <span class="gallery__price-count">
+                  <strong>100</strong> UAH <span class="gallery__price-count gallery__price-count--color">/ 3$</span>
+                </span>
+                <a class="gallery__btn" href="#popup-delivery">Заказать</a>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <div class="other">
+          <div class="other__head">
+            <label class="other__label">
+              <input class="other__radio visually-hidden" type="radio" name="other-info" checked data-item="slider">
+              <h5 class="other__title">Похожие запчасти</h5>
+            </label>
+
+            <label class="other__label">
+              <input class="other__radio visually-hidden" type="radio" name="other-info" data-item="info">
+              <h5 class="other__title">Дополнительная информация</h5>
+            </label>
+          </div>
+
+          <div class="other__content">
+            <div class="other-slider">
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-1.png" alt="">
+                  <p class="card__descr">Ручка наружная 00093654 Ford Explorer v 2010 - 2019</p>
+                  <div class="card__price"><span class="card__price-count">100</span> UAH
+                    <span class="card__price-count--color">/ 3$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-2.png" alt="">
+                  <p class="card__descr">Блок упраления ДВС 00089225 Infiniti FX I 2002 - 2008</p>
+                  <div class="card__price"><span class="card__price-count">10 000</span> UAH
+                    <span class="card__price-count--color">/ 350$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-3.png" alt="">
+                  <p class="card__descr">Двигатель 00058557 Honda Pilot II 2008 - 2015</p>
+                  <div class="card__price"><span class="card__price-count">1000</span> UAH
+                    <span class="card__price-count--color">/ 35$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-1.png" alt="">
+                  <p class="card__descr">Ручка наружная 00093654 Ford Explorer v 2010 - 2019</p>
+                  <div class="card__price"><span class="card__price-count">100</span> UAH
+                    <span class="card__price-count--color">/ 3$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-2.png" alt="">
+                  <p class="card__descr">Блок упраления ДВС 00089225 Infiniti FX I 2002 - 2008</p>
+                  <div class="card__price"><span class="card__price-count">10 000</span> UAH
+                    <span class="card__price-count--color">/ 350$</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="other-slider__item">
+                <div class="card ">
+                  <img class="card__img" src="../images/product-3.png" alt="">
+                  <p class="card__descr">Двигатель 00058557 Honda Pilot II 2008 - 2015</p>
+                  <div class="card__price"><span class="card__price-count">1000</span> UAH
+                    <span class="card__price-count--color">/ 35$</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="other-info">
+              <ul class="other-info__list">
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают тогда, когда автомобиль был заправлен некачественным бензином. После того, как водитель
+                  замечает,
+                  что в бак было залито топливо низкого качества, слить такой бензин, наиболее разумное решение, чтобы
+                  избежать
+                  возможных поломок двигателя. Второй причиной, по которой может понадобиться слить топливо из бака
+                  может стать
+                  необходимость использования бензина </li>
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают тогда, когда автомобиль был заправлен некачественным бензином. </li>
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают тогда, когда автомобиль был заправлен некачественным бензином. </li>
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают
+                  тогда, когда автомобиль был заправлен некачественным бензином. </li>
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают
+                  тогда, когда автомобиль был заправлен некачественным бензином. </li>
+                <li class="other-info__list-item">Ситуации, когда необходимо слить топливо из бака зачастую
+                  возникают
+                  тогда, когда автомобиль был заправлен некачественным бензином. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="textbox">
+          <h2 class="title textbox__title">Блок для SEO текста</h2>
+          <div class="textbox__text">
+            <p class="textbox__text-inner">
+              Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут
+              они в
+              буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране
+              и
+              обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены
+              предложения
+              залетают прямо в рот.
+            </p>
+            <a href="#" class="link">Читать полностью</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <img src="../images/logo.svg" alt="AutoHub" class="logo">
+        <ul class="footer-list">
+          <li class="footer-list__item"><a href="page-about.html" class="footer-list__link">О Нас</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Оплата</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Доставка</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Гарантия</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Скидки</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Новости</a></li>
+          <li class="footer-list__item"><a href="" class="footer-list__link">Карьера</a></li>
+          <li class="footer-list__item"><a href="page-contacts.html" class="footer-list__link">Контакты</a></li>
+        </ul>
+        <div class="social">
+          <a href="" class="social__link"><img src="../images/instagram.svg" alt="instagram"></a>
+          <a href="" class="social__link"><img src="../images/facebook.svg" alt="facebook"></a>
+          <a href="" class="social__link"><img src="../images/youtube.svg" alt="youtube"></a>
+          <a href="" class="social__link"><img src="../images/google.svg" alt="google"></a>
+        </div>
+        <div class="copyright">
+          <p class="copyright__text">Работает на системе <span>Ubase</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.min.js"></script>
+</body>
+
+</html>

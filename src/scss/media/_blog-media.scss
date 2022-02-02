@@ -1,0 +1,32 @@
+@media (max-width: 1140px) {
+  .blog-page {
+    &__content {
+      justify-content: space-around;
+    }
+    &__blog-card {
+      flex-basis: 33%;
+      min-width: 385px;
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  .blog-page {
+    &__content {
+      justify-content: center;
+    }
+    &__blog-card {
+      flex-basis: 50%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .blog-page {
+    &__blog-card {
+      flex-basis: 100%;
+      min-width: auto;
+    }
+  }
+}

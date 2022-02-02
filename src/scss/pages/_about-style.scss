@@ -1,0 +1,54 @@
+.about {
+  padding: 60px 0px 40px;
+  &__title {
+    font-family: "VisbyCF-ExtraBold";
+    font-weight: 800;
+    font-size: 24px;
+  }
+  &__text {
+    padding: 20px 0px 0px;
+    font-size: 16px;
+  }
+  &__list {
+    padding-bottom: 40px;
+  }
+  &__list-column{
+    display: inline-block;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: -70px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #e7e7e7;
+    }
+    .about__list-item{
+      max-width: 49%;
+      float: right;
+    }
+  }
+  &__list-item {
+    font-size: 16px;
+    padding: 5px 0px 5px 20px;
+    position: relative;
+    &::before {
+      content: "";
+      height: 10px;
+      width: 10px;
+      border: none;
+      border-radius: 50%;
+      background-color: $normal;
+      position: absolute;
+      top: 17px;
+      left: 0;
+    }
+  }
+}
+
+.title-list {
+  font-family: "VisbyCF-ExtraBold";
+  font-weight: 800;
+  margin: 40px 0 10px;
+}

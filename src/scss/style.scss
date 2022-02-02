@@ -1,0 +1,268 @@
+@import "~normalize.css/normalize";
+@import "fonts";
+@import "global";
+@import 'reset';
+@import "vars";
+html, body{
+  overflow-x: hidden;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "VisbyCF-DemiBold";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1em;
+  color: $text;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.search {
+  background-image: url("../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 665px;
+  padding: 90px 0px 90px 350px;
+}
+
+.form {
+  background-color: #000;
+  width: 385px;
+  min-height: 485px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__title {
+    font-family: "VisbyCF-ExtraBold", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: $normal;
+    text-align: center;
+    padding: 30px 0px 20px;
+  }
+  &__submit {
+    height: 50px;
+    width: 325px;
+    background-color: $normal;
+    text-align: center;
+    font-family: "VisbyCF-ExtraBold", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: $text;
+    border-radius: 7px;
+    text-transform: uppercase;
+  }
+}
+
+.select {
+  width: 325px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #fff;
+  background-color: transparent;
+  padding: 14px 15px 14px 18px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 15px;
+  &::after{
+    content: '';
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-image: url(../images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__item{
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    padding: 5px 15px 5px 0px;
+    border: 1px solid rgba(#fff, 0.5);
+    border-top: none;
+    border-radius: 7px;
+    width: 325px;
+  }
+}
+.ui-menu-item.ui-state-disabled{
+  display: none;
+}
+.ui-selectmenu-disabled{
+  background-color: rgba(#fff, 0.3);
+  color: rgba(#fff, 0.6);
+}
+
+.brands {
+  &__text {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 50px 0px 90px;
+  }
+}
+
+.brands-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  &__item {
+    height: 100px;
+    outline: none;
+  }
+  &__item-inner{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    min-height: 100%;
+  }
+}
+
+.slider-slick-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.slider-slick-prev {
+  background-image: url("../images/slider-arrow-prev.svg");
+  left: -10px;
+}
+
+.slider-slick-next {
+  background-image: url("../images/slider-arrow-next.svg");
+  right: -10px;
+}
+
+.product-slider {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.product-slick-btn {
+  top: 25%;
+}
+
+.card-product{
+  position: relative;
+  &__card-btn {
+    display: block;
+    margin-top: 30px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: $normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 43px;
+    width: 125px;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    padding: 10px 0;
+  }
+  &:hover {
+    .card-product__card-btn {
+      z-index: 10;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+.blog-slider {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 15px 20px;
+
+  .blog-card{
+    margin: 0 auto;
+  }
+}
+
+.slick-list {
+  padding: 5px 0;
+}
+
+.delivery {
+  &__text {
+    padding-bottom: 115px;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 1.6em;
+  }
+  &__info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__card {
+    display: inline-block;
+    min-height: 80px;
+    width: 280px;
+    margin-right: 10px;
+  }
+  &__card-icon {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: $normal;
+    padding: 25px;
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &__card-text {
+    display: inline-block;
+    font-size: 14px;
+    width: 185px;
+  }
+  &__card-title {
+    font-family: "VisbyCF-ExtraBold";
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &__card-subtitle {
+    color: #b1b1b1;
+  }
+}
+
+@import 'pages/spares-style';
+
+@import 'pages/product-style';
+
+@import 'pages/contacts-style';
+
+@import "pages/about-style";
+
+@import "pages/blog-style";
+
+@import "pages/blog-single-style";
+
+@import "media/media";

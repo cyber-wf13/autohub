@@ -1,0 +1,484 @@
+.aside {
+  width: 285px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.aside--active{
+  left: 0 !important;
+}
+
+.aside__item--active{
+  left: 300px !important;
+}
+
+.aside__menu-btn {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../images/menu-close.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
+  background-color: $normal;
+  border: none;
+  border-radius: 7px;
+  transition: 0.3s;
+  z-index: 30;
+}
+
+.form-spares {
+  padding-bottom: 20px;
+  &__input-title {
+    font-family: "VisbyCF-Bold";
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  &__input-text {
+    margin-bottom: 20px;
+  }
+  &__input-item {
+    height: 40px;
+    width: 257px;
+    border: 1px solid #898989;
+    border-radius: 5px;
+  }
+  &__submit{
+    display: block;
+    height: 50px;
+    width: 282px;
+    border: none;
+    border-radius: 7px;
+    background-color: $normal;
+    font-family: 'VisbyCF-ExtraBold';
+    font-size: 20px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+    cursor: pointer;
+  }
+  &__reset{
+    display: block;
+    margin: 0 auto;
+    font-family: 'VisbyCF-Bold';
+    font-size: 18px;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.selection-box {
+  position: relative;
+  height: 435px;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+  }
+  &__title {
+    font-family: "VisbyCF-Bold";
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  &__title-head{
+    font-size: 18px;
+    padding: 60px 0px 30px;
+  }
+}
+
+.selection-box__param {
+  height: 291px;
+}
+
+.selection-box__range {
+  height: auto;
+}
+
+.selection-box__range--last::after {
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  &__aside-btn--mobile {
+    display: none;
+  }
+  &__card {
+    display: inline-block;
+    flex-basis: 28%;
+    margin: 15px 2.5px;
+    position: relative;
+    &:hover {
+      .content__card-btn {
+        z-index: 10;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+  &__card-box{
+    margin-left: 25px;
+    flex-basis: 76%;
+  }
+  &__card-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__card-descr {
+    max-width: 286px;
+  }
+  &__card-btn {
+    display: block;
+    margin-top: 30px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: $normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 43px;
+    width: 125px;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    padding: 10px 0;
+  }
+  &__aside-btn--mobile {
+    display: none;
+    height: 40px;
+    width: 158px;
+    text-transform: uppercase;
+    font-family: "VisbyCF-Bold";
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 3px 30px #ececec;
+    margin-right: 35px;
+  }
+  &__page-number{
+    margin-top: 60px;
+  }
+}
+
+.content__review {
+  position: relative;
+  padding: 14px 20px;
+  margin: 60px 0 15px;
+  background-color: #fff;
+  box-shadow: 0px 3px 30px #ececec;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &-wrapper{
+    // flex-basis: 85%;
+    flex-grow: 0.95;
+  }
+  &-title {
+    text-transform: uppercase;
+    font-family: "VisbyCF-Bold";
+    font-weight: 700;
+    display: inline;
+    padding-right: 10px;
+  }
+  &-label {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  &-btn {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    background-image: url("../images/review-btn.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: 20px 20px;
+    background-position: center center;
+    cursor: pointer;
+  }
+}
+
+.content__review-radio {
+  position: absolute;
+  left: -9999px;
+  &:checked + .content__review-label {
+    svg {
+      fill-opacity: 1;
+    }
+  }
+}
+
+.filter {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 207px;
+  background-color: #fff;
+  padding: 20px 20px 5px;
+  z-index: 10;
+  &__list-item {
+    padding-bottom: 15px;
+  }
+}
+.content__label {
+  &-list {
+    svg {
+      fill-opacity: 0.5;
+    }
+  }
+  &-card {
+    svg {
+      fill-opacity: 0.5;
+    }
+  }
+}
+
+.card-list {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .content__card-btn{
+    display: none;
+  }
+
+  .content__card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: auto;
+    min-height: auto;
+  }
+
+  .card__descr{
+    width: 100%;
+    min-height: auto;
+    text-align: left;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 5px 0 20px;
+  }
+
+  .card-list__subdescr{
+    display: block;
+    font-family: "VisbyCF-Medium";
+    font-weight: 500;
+    font-size: 16px;
+    color: #717171;
+    padding-top: 20px;
+  }
+
+  &__subdescr--color {
+    font-family: "VisbyCF-DemiBold";
+    font-weight: 600;
+    color: $text;
+  }
+
+  .card-list__btn{
+    display: block;
+    margin-top: 30px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background-color: $normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 43px;
+    width: 125px;
+    padding: 10px 0;
+  }
+}
+
+.card-list__subdescr{
+  display: none;
+}
+
+.card-list__btn{
+  display: none;
+}
+
+.accordion{
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  &__header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 20px;
+      border: 1px solid #898989;
+      border-radius: 3px;
+      background-color: transparent;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      height: 20px;
+      width: 25px;
+      background-image: url(../images/select-arrow-down.svg);
+      background-size: cover;
+      transition: all 0.2s;
+    }
+  }
+  &__header[data-active='active'],
+  &__header.ui-accordion-header-active{
+    &::before{
+      content: '';
+      background-color: $normal;
+      border: none;
+      background-image: url(../images/confirm.svg);
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      background-position: center center;
+    }
+    &::after{
+      content: '';
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+  &__header.ui-accordion-header-collapsed::after{
+    content: '';
+    transform: translateY(-50%) rotate(0deg);
+  }
+  &__title{
+    font-family: "VisbyCF-Bold";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1em;
+    color: $text;
+    padding-right: 5px;
+  }
+  &__count{
+    font-size: 14px;
+    color: #8E8E8E;
+  }
+  &__content{
+    padding: 10px 0 15px 25px;
+  }
+  &__input-item{
+    width: 237px;
+    height: 35px;
+    border: 1px solid #898989;
+    border-radius: 5px;
+  }
+  &__label{
+    display: inline-block;
+    margin: 5px 0;
+  }
+  &__radio-name{
+    font-size: 14px;
+    line-height: 1em;
+    max-width: 206px;
+    display: inline-block;
+    position: relative;
+    padding-left: 21px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      border: 1px solid #898989;
+      border-radius: 50%;
+      background-color: transparent;
+    }
+  }
+  &__radio:checked + .accordion__radio-name::before{
+    content: '';
+    background-image: url(../images/radio-dot.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: 3px 3px;
+  }
+  &__radio-count{
+    font-size: 12px;
+    color: #8E8E8E;
+  }
+}
+
+.slider{
+  height: 5px;
+  width: 95%;
+  border-radius: 5px;
+  background-color: #E7E7E7;
+  position: relative;
+  cursor: pointer;
+  &__handle{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    height: 15px;
+    width: 15px;
+    border: 3px solid $normal;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+  }
+  &__amount{
+    font-family: 'VisbyCF-Bold';
+    font-size: 14px;
+    line-height: 1em;
+    padding: 25px 0 20px;
+  }
+  &__amount-value{
+    border: none;
+    background-color: transparent;
+  }
+  &__currency{
+    display: inline;
+    font-family: 'VisbyCF-DemiBold';
+    font-size: 14px;
+    line-height: 1em;
+  }
+  &__currency-exchange{
+    color: #B1B1B1;
+  }
+  &__range{
+    background-color: $normal;
+    position: absolute;
+    height: 100%;
+  }
+}
